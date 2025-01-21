@@ -1,46 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/30 12:33:59 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/13 12:48:47 by dortega-         ###   ########.fr       */
+/*   Created: 2025/01/20 14:53:54 by dortega-          #+#    #+#             */
+/*   Updated: 2025/01/20 15:07:15 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *a, int c, size_t n)
+void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned char	*s;
-	size_t			i;
-
-	i = 0;
-	s = a;
-	while (i < n)
+	if (n == -2147483648)
+		ft_putstr_fd("-2147483648", fd);
+	else
 	{
-		s[i] = (unsigned char)c;
-		i++;
+		if (n < 0)
+		{
+			ft_putchar_fd('-', fd);
+			n = n * -1;
+		}
+		if (n >= 9)
+		{
+			ft_putnbr_fd(n / 10, fd);
+		}
+		ft_putchar_fd((n % 10) + '0', fd);
 	}
-	return (a);
 }
 /*
-#include <stdio.h>
-
 int	main(void)
 {
-	char	array[10];
-	int		i;
-
-	i = 0;
-	ft_memset(array, 'A', 10);
-	while (i < 10)
-	{
-		printf("%c", array[i]);
-		i++;
-	}
-	printf("\n");
+	ft_putnbr_fd(12345, 1);
 	return (0);
 }*/

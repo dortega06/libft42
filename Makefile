@@ -6,7 +6,7 @@
 #    By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/02 13:52:09 by dortega-          #+#    #+#              #
-#    Updated: 2025/01/13 13:31:22 by dortega-         ###   ########.fr        #
+#    Updated: 2025/01/21 14:55:13 by dortega-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,19 @@ SRCS = ft_isalpha.c\
        ft_calloc.c\
        ft_strdup.c\
 	   ft_atoi.c\
+	   ft_substr.c\
+	   ft_strjoin.c\
+	   ft_strtrim.c\
+	   ft_strmapi.c\
+	   ft_striteri.c\
+	   ft_putchar_fd.c\
+	   ft_putstr_fd.c\
+	   ft_putendl_fd.c\
+	   ft_putnbr_fd.c\
+	   ft_itoa.c\
+	   ft_split.c\
+
+
 
 
 INC = libft.h

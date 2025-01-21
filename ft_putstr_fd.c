@@ -1,46 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/30 12:33:59 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/13 12:48:47 by dortega-         ###   ########.fr       */
+/*   Created: 2025/01/20 13:53:11 by dortega-          #+#    #+#             */
+/*   Updated: 2025/01/20 14:01:36 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *a, int c, size_t n)
+void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned char	*s;
-	size_t			i;
+	int	i;
 
 	i = 0;
-	s = a;
-	while (i < n)
+	while (s[i] != '\0')
 	{
-		s[i] = (unsigned char)c;
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
-	return (a);
 }
 /*
-#include <stdio.h>
-
-int	main(void)
+int main(void)
 {
-	char	array[10];
-	int		i;
-
-	i = 0;
-	ft_memset(array, 'A', 10);
-	while (i < 10)
-	{
-		printf("%c", array[i]);
-		i++;
-	}
-	printf("\n");
+	char	str[] = "hello";
+	ft_putstr_fd(str, 1);
 	return (0);
 }*/

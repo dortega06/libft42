@@ -1,46 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/30 12:33:59 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/13 12:48:47 by dortega-         ###   ########.fr       */
+/*   Created: 2025/01/20 13:17:28 by dortega-          #+#    #+#             */
+/*   Updated: 2025/01/20 13:38:17 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *a, int c, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned char	*s;
-	size_t			i;
+	unsigned int	i;
 
 	i = 0;
-	s = a;
-	while (i < n)
+	while (s[i])
 	{
-		s[i] = (unsigned char)c;
+		f(i, &s[i]);
 		i++;
 	}
-	return (a);
 }
 /*
 #include <stdio.h>
 
 int	main(void)
 {
-	char	array[10];
-	int		i;
-
-	i = 0;
-	ft_memset(array, 'A', 10);
-	while (i < 10)
-	{
-		printf("%c", array[i]);
-		i++;
-	}
-	printf("\n");
 	return (0);
 }*/
