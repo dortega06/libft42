@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 14:53:54 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/20 15:07:15 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/22 12:49:02 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ void	ft_putnbr_fd(int n, int fd)
 		if (n < 0)
 		{
 			ft_putchar_fd('-', fd);
-			n = n * -1;
+			n = -n;
 		}
-		if (n >= 9)
+		if (n >= 10)
 		{
 			ft_putnbr_fd(n / 10, fd);
 		}

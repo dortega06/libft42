@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 13:30:33 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/03 16:17:34 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:56:19 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,18 @@ void	*ft_memmove(void *dest, const void *origen, size_t len)
 		ft_memcpy(des, src, len);
 	return (des);
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	int	fuente[] = {1, 2, 3, 4, 5};
+	int	destino[5];
+	ft_memmove(destino, fuente, sizeof(fuente));
+	int	i = 0;
+	while (i < 5)
+	{
+		printf("%d\n", destino[i]);
+		i++;
+	}
+	return (0);
+}*/

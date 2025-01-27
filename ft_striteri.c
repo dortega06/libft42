@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/20 13:17:28 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/20 13:38:17 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/27 15:30:05 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,13 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 /*
 #include <stdio.h>
 
+void	index_and_char(unsigned int index, char *c)
+{
+	printf("Índice: %u, Carácter: %c\n", index, *c);
+}
 int	main(void)
 {
+	char str[] = "Hola Mundo";
+	ft_striteri(str, index_and_char);
 	return (0);
 }*/

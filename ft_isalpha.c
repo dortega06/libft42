@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 10:39:17 by dortega-          #+#    #+#             */
-/*   Updated: 2024/12/30 13:36:26 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/22 14:16:32 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,16 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	int	c;
+	char	res;
+
+	c = 'a';
+	res = ft_isalpha(c);
+	printf("%d\n", res);
+	return (0);
+}*/

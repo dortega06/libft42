@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 14:21:47 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/14 12:35:50 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/27 13:41:20 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,21 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*s1 = "hoala";
+	char	*s2 = "holia";
+	size_t	n = 12;
+	int		result = ft_strncmp(s1, s2, n);
+
+	if (result == 0)
+		printf("Las cadenas son iguales.\n", n);
+    	else if (result < 0)
+		printf("La cadena '%s' es menor '%s'.\n", s1, s2, n);
+    	else
+		printf("La cadena '%s' es mayor que '%s'.\n", s1, s2, n);
+	return (0);
+}*/

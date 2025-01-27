@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 12:44:32 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/13 16:15:38 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/23 15:47:23 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,11 @@ int	main(void)
 	const char *str = "Hola l";
     char *result = ft_strchr(str, 'l');
 
-    if (result != NULL) {
+    if (result != NULL) 
+	{
         printf("Carácter encontrado en: %s\n", result);
-    } else {
-        printf("Carácter no encontrado.\n");
-    }
+    } 
+	else
+    	printf("Carácter no encontrado.\n");
 	return (0);
 }*/

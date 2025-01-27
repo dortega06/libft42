@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/30 13:59:28 by dortega-          #+#    #+#             */
-/*   Updated: 2024/12/30 14:26:41 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/27 12:42:14 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,13 @@ void	ft_bzero(void *str, size_t n)
 		i++;
 	}
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	char	str[] = "Hello, Mundo";
+	printf("%s\n",str);
+	ft_bzero(str, 7);
+	printf("despues %s\n", str);
+	return (0);
+}*/

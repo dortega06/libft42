@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/10 13:41:57 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/10 14:53:24 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/27 14:02:57 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,18 +27,18 @@ void	*ft_calloc(size_t num, size_t size)
 
 int	main(void)
 {
-	int *arr = (int *)ft_calloc(5, sizeof(int));
-
-    if (arr == NULL) {
-        printf("Error al asignar memoria.\n");
-        return 1;
-    }
-    printf("Valores del arreglo:\n");
-    for (int i = 0; i < 5; i++)
+	size_t count = 5;
+    size_t size = sizeof(int);
+	int *arr = (int *)ft_calloc(count, size);
+	size_t i = 0;
+    if (arr)
 	{
-        printf("%d ", arr[i]);
+    	while (i < count)
+		{
+        	printf("arr[%zu] = %d\n", i, arr[i]);
+			i++;
+		}
     }
-    printf("\n");
     free(arr);
     return 0;
 }*/

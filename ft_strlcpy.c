@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 13:58:29 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/02 15:40:30 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/27 13:18:25 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,17 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 	dest[i] = '\0';
 	return (len);
 }
+/*
+#include <stdio.h>
+
+int	main()
+{
+	char	fuente[] = "Holaa";
+	char	destino[10];
+	size_t result = ft_strlcpy(destino, fuente, sizeof(destino));
+
+    printf("Fuente: %s\n", fuente);
+    printf("Destino: %s\n", destino);
+    printf("Longitud de la fuente: %zu\n", result);
+	return (0);
+}*/

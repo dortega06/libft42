@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 13:06:09 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/21 13:36:11 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/27 14:26:04 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,3 +62,13 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+/*
+#include <stdio.h>
+
+int	main()
+{
+	int	num = -12345;
+	char *result = ft_itoa(num);
+	printf("El número %d como cadena es: %s\n", num, result);
+	return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: dortega- <dortega-@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 15:36:07 by dortega-          #+#    #+#             */
-/*   Updated: 2025/01/13 16:29:40 by dortega-         ###   ########.fr       */
+/*   Updated: 2025/01/23 15:49:29 by dortega-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,12 @@ char	*ft_strrchr(const char *str, int c)
 #include <stdio.h>
 int	main(void)
 {
-	const char	*str = "hola o";
+	const char	*str = "hola y";
 	char	c = 'y';
 	char *result = ft_strrchr(str, c);
 
 	if (result != NULL)
-		printf("La última ocurrencia de '%c' se encuentra en: %s\n", c, result);
+		printf("%s\n", result);
 	else
 		printf("no.\n");
 	return (0);
